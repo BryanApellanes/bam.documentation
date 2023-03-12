@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Documentation\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Documentation\README.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Documentation\XmlDocumentation.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+
+</Project>
